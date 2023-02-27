@@ -1,0 +1,234 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #e3e8f8;
+}
+
+.btn {
+  display: inline-block;
+  margin-left: 370px;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #3e588f;
+  color: #e3e8f8;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #c0c5cd;
+}
+
+header {
+  display: inline;
+}
+
+/* Navbar */
+nav {
+  max-height: 70px;
+  line-height: 70px;
+  background: #3e588f;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navbar_item {
+  list-style: none;
+  text-align: center;
+  width: 200px;
+  height: 70px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar_content {
+  display: none;
+  background-color: #3e588f;
+  line-height: 30px;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  position: sticky;
+}
+
+.navbar_item:hover .navbar_content {
+  display: block;
+}
+
+.navbar_item:hover .navbar_content:hover {
+  background-color: #c0c5cd;
+}
+
+.navbar_item:hover {
+  background-color: #c0c5cd;
+}
+
+.navbar_item a {
+  color: #e3e8f8;
+  text-decoration: none;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../WebDasar/assets/gee1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 680px;
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 120px;
+}
+
+.jumbotron::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.jumbotron h1 {
+  color: #3e588f;
+  font-size: 28px;
+  text-align: center;
+  padding: 200px 0 300px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* Pendahuluan Section */
+.pendahuluan {
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+}
+
+.pendahuluan h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #3e588f;
+  line-height: 1.5;
+}
+
+.pendahuluan p {
+  text-align: center;
+  line-height: 2;
+  font-size: 18px;
+}
+
+/* Pemanfaatan Section */
+
+.pemanfaatan {
+  padding: 80px;
+}
+
+.pemanfaatan h3 {
+  font-size: 24px;
+  color: #3e588f;
+  line-height: 1.5;
+}
+
+.pemanfaatan p {
+  font-size: 17px;
+  line-height: 2;
+  margin-right: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.image-column {
+  display: flex;
+  align-items: center;
+}
+
+#slide-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Footer */
+
+.tentang {
+  background-color: #3e588f;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.aboutme h3 {
+  color: #e3e8f8;
+}
+
+.aboutme p {
+  padding: 20px;
+  color: #e3e8f8;
+}
+
+.about-img {
+  flex: 1;
+  margin-right: 30px;
+}
+.about-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about-content {
+  flex: 2;
+}
+
+.about-medsos {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-medsos li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+footer {
+  background-color: #e3e8f8;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}

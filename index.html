@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial scale="1.0" />
+    <title>Pemanfaatan Google Earth Engine untuk Ekstraksi Data Spasial</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style></style>
+  </head>
+
+  <header>
+    <nav>
+      <ul class="navbar_list">
+        <li class="navbar_item"><a href="#pendahuluan">Pendahuluan </a></li>
+        <li class="navbar_item">
+          <a href="#pemanfaatan">Pemanfaatan GEE</a>
+          <ul>
+            <li class="navbar_content">
+              <a href="#nitro">Ekstraksi Gas NO2</a>
+            </li>
+            <li class="navbar_content">
+              <a href="#nightlight">Ekstraksi Nightlight</a>
+            </li>
+            <li class="navbar_content">
+              <a href="#slope">Ekstraksi Data Ketinggian</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="navbar_item"><a href="#tentang">Tentang</a></li>
+      </ul>
+    </nav>
+    <div class="jumbotron">
+      <h1>PEMANFAATAN GOOGLE EARTH ENGINE UNTUK EKSTRAKSI DATA SPASIAL</h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pendahuluan -->
+    <article class="pendahuluan" id="pendahuluan">
+      <div class="pendahuluan_content">
+        <h2>PENDAHULUAN</h2>
+        <p>
+          <em>Google Earth Engine</em> atau disingkat GEE merupakan termasuk
+          sebuah platform berbasis <em>cloud computation</em> dan digunakan
+          untuk memproses citra satelit dan data geospasial untuk melakukan
+          berbagai analisis data. Platform
+          <em>Google Earth Engine</em> menyediakan data geospasial seperti citra
+          satelit yang digunakan secara luas. Koleksi data tersebut dapat
+          dilihat dan digunakan melalui
+          <cite
+            ><a href="https://developers.google.com/earth-engine/datasets"
+              >developers.google.com/earth-engine/datasets</a
+            ></cite
+          >
+          yang berisi banyak katalog dataset. Dalam hal ini GEE menyediakan
+          koleksi data dengan berbagai jenis yang digunakan sesuai kebutuhan,
+          mulai dari resolusi spasial, nilai piksel, periode pengambilan gambar,
+          dan informasi lainnya seperti perkiraan reflektansi spektral
+          permukaan. Berikut ini merupakan beberapa contoh pengaplikasian
+          ekstraksi citra untuk analisis data spasial di wilayah Provinsi Daerah
+          Istimewa Yogyakarta.
+        </p>
+        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+      </div>
+    </article>
+
+    <article class="pemanfaatan" id="pemanfaatan">
+      <div class="container" id="nitro">
+        <div class="text-column">
+          <h3>Ekstraksi Data Nitrogen Dioksida</h3>
+          <p>
+            Analisis data gas nitrogen dioksida (NO2) dapat ditampilkan
+            menggunakan Google Earth Engine dari data citra Sentinel-5P NRTI NO2
+            : Near Real-Time Nitrogen Dioxide yang menyediakan data citra
+            resolusi tinggi near real time dari konsentasi NO2. Pemetaan
+            analisis gas nitrogen dioksida ini digunakan untuk memonitoring
+            pencemaran udara sebagai indikator polusi di suatu wilayah. Pada
+            gambar, ekstraksi data ditampilkan pada tahun 2019 dan 2020 untuk
+            mengetahui dampak pandemi Covid-19 terhadap polusi udara di Daerah
+            Istimewa Yogyakarta.
+          </p>
+        </div>
+        <div class="image-column">
+          <div id="slide-container">
+            <div class="slide">
+              <img src="assets/nitro1.png" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="assets/nitro2.png" alt="Slide 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="nightlight">
+        <div class="text-column">
+          <h3>Ekstraksi Data Nightlight</h3>
+          <p>
+            Pengolahan data untuk menampilkan nighlight dilakukan dengan import
+            data DMSP OLS: Nighttime Lights Time Series Version 4, Defense
+            Meteorological Program Operational Linescan System yang merupakan
+            satelit penginderaan jauh yang memiliki kemampuan untuk mendeteksi
+            sumber emisi tampak dan inframerah dekat (VNIR) di malam hari dengan
+            resolusi spasial 927,67 meter. Versi 4 dari DMSP-OLS Nighttime
+            Lights Time Series terdiri dari komposit bebas awan yang dibuat
+            menggunakan semua data resolusi halus DMSP-OLS yang tersedia untuk
+            tahun kalender. Data ini akan menampilkan polusi cahaya di malam
+            hari yang meningkat di Daerah Istimewa Yogyakarta.
+          </p>
+        </div>
+        <div class="image-column">
+          <div id="slide-container">
+            <div class="slide">
+              <img src="assets/nightlight1.png" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="assets/nightlight2.png" alt="Slide 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="slope">
+        <div class="text-column">
+          <h3>Ekstraksi Data Ketinggian</h3>
+          <p>
+            Data ketinggian dapat diekstraksi dari citra SRTM Digital Elevation
+            Data Version 4 yang selanjutnya dilakukan analisis perhitungan nilai
+            rata-rata ketinggian pada wilayah kajian. Analisis mean elevation
+            ini akan membuat analisis terrain seperti slope dan aspect di
+            wilayah Provinsi Daerah Istimewa Yogyakarta.
+          </p>
+        </div>
+        <div class="image-column">
+          <div id="slide-container">
+            <div class="slide">
+              <img src="assets/sin.png" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="assets/slope.png" alt="Slide 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="tentang" id="tentang">
+        <div class="aboutme">
+          <div class="about-img">
+            <img src="assets/ifa.jpg" alt="Amalia Arifah" />
+          </div>
+          <div class="about-content">
+            <h3>Tentang Saya</h3>
+            <p>
+              Hi! I'm Amalia Arifah Puji Sopyan, currently studying Geographic
+              Information System (GIS) at Universitas Gadjah Mada. I am
+              interested in learning about system development and gaining more
+              experience related to GIS.
+            </p>
+          </div>
+          <div class="about-medsos">
+            <li>
+              <a href="#"
+                ><i style="color: #e3e8f8" class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i style="color: #e3e8f8" class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i style="color: #e3e8f8" class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+      </aside>
+
+      <footer>
+        <p>&copy; 2023 Amalia Arifah Puji Sopyan</p>
+      </footer>
+    </article>
+  </main>
+</html>
